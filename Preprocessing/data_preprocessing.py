@@ -31,7 +31,7 @@ import json
 from keras.preprocessing.text import Tokenizer
 from keras.preprocessing import sequence
 
-with open('Datasets/News_Category_Dataset_v3.json','r') as f:
+with open('/News_Category_Dataset_v3.json','r') as f:
     jdata = f.read()
 
 jdata2  = [json.loads(line) for line in jdata.split('\n') if line]
